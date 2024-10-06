@@ -67,7 +67,7 @@ body {
     padding: 5px 0;
   }
 
-  
+
 }
 
 @media screen and (max-width: 480px) {
@@ -112,7 +112,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* Buttons */
 .buttons {
   margin-bottom: 20px;
 }
@@ -143,7 +142,6 @@ p {
   opacity: 0.8;
 }
 
-/* Cards Styling */
 .cards {
   display: flex;
   gap: 15px;
@@ -158,7 +156,7 @@ p {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.title{
+.title {
   font-size: 14px;
 }
 
@@ -167,7 +165,6 @@ p {
   margin-top: 0;
 }
 
-/* Right Column */
 .right-column {
   width: 50%;
   display: flex;
@@ -176,7 +173,7 @@ p {
   justify-content: space-between;
 }
 
-.image-full{
+.image-full {
   background-image: url('./images/commercial-real-estate.jpg');
   background-size: cover;
   background-position: center;
@@ -193,7 +190,7 @@ p {
   flex-direction: column;
 }
 
-.first-image{
+.first-image {
   background-image: url('./images/office_group.jpg');
   background-size: cover;
   background-position: center;
@@ -201,7 +198,8 @@ p {
   height: 50%;
 
 }
-.second-image{
+
+.second-image {
   background-image: url('./images/office.jpg');
   background-size: cover;
   background-position: center;
@@ -211,14 +209,20 @@ p {
 }
 
 
+
 /* Responsive Design for smaller screens */
 @media screen and (max-width: 768px) {
-  
-  .container_div{
+
+  .container_div {
     flex-direction: row;
     height: 500px;
   }
-  .tag-line{
+  .primary-btn{
+    margin-bottom: 10px;
+
+  }
+
+  .tag-line {
     font-size: 18px;
   }
 
@@ -228,22 +232,21 @@ p {
     height: 500px;
     flex-direction: row;
   }
-  .photos{
+
+  .photos {
     flex-direction: row;
   }
 
 
-  .first-image{
+  .first-image {
     height: auto;
   }
 
-  .second-image{
+  .second-image {
     height: auto;
   }
 }
 
-/* card section */
-/* Cards Container Styling */
 .containers {
   display: flex;
   justify-content: space-between;
@@ -251,7 +254,6 @@ p {
   flex-wrap: wrap;
 }
 
-/* Individual Card Styling */
 .nameing-card {
   flex: 1 1 calc(10.66% - 10px);
   background-color: #fff;
@@ -266,7 +268,6 @@ p {
   font-size: 18px;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 1024px) {
   .card {
     flex: 1 1 calc(33.33% - 10px);
@@ -282,14 +283,14 @@ p {
 @media screen and (max-width: 480px) {
   .card {
     flex: 1 1 100%;
-   
+
   }
 }
-
 
 .header-section {
   padding: 20px;
 }
+
 
 
 /* display container */
@@ -306,10 +307,10 @@ p {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   justify-content: space-between;
   max-width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .card {
@@ -326,12 +327,12 @@ p {
   height: 200px;
   object-fit: cover;
 }
-.image-container{
+
+.image-container {
   position: relative;
 
 
 }
-
 
 .card .popular {
   position: absolute;
@@ -342,7 +343,7 @@ p {
   padding: 5px 10px;
   font-size: 0.9rem;
   border-radius: 3px;
-} 
+}
 
 .card-content {
   padding: 15px;
@@ -397,13 +398,12 @@ p {
 }
 
 
-/* Responsive design */
 @media (max-width: 768px) {
   .card {
     flex-basis: 100%;
-    /* Cards take full width on smaller screens */
   }
-  .card-features-ab{
+
+  .card-features-ab {
     flex-direction: column;
   }
 
@@ -423,7 +423,6 @@ p {
   margin: 50px auto;
 }
 
-/* First Section Styles */
 .first-section {
   flex: 1;
   width: 50%;
@@ -477,20 +476,20 @@ p {
   display: flex;
   flex-direction: column;
   width: 50%;
-
-
 }
 
 
-.full-image-section  {
+.full-image-section {
   width: 100%;
 }
 
 .header-blue {
   color: blue;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-.teams-image{
+.teams-image {
   background-image: url('./images/team.jpg');
   background-size: cover;
   background-position: center;
@@ -498,7 +497,8 @@ p {
   height: 50%;
 
 }
-.advetise-image{
+
+.advetise-image {
   background-image: url('./images/building1.avif');
   background-size: cover;
   background-position: center;
@@ -506,29 +506,30 @@ p {
   height: 50%;
 }
 
-.advetise-image2{
+.advetise-image2 {
   background-image: url('./images/building1.avif');
   background-size: cover;
   background-position: center;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
   }
-  .first-section{
+
+  .first-section {
     width: 100%;
   }
 
-  .second-section{
+  .second-section {
     width: 100%;
     height: 500px;
     flex-direction: row;
   }
-  .heading{
+
+  .heading {
     font-size: 18px !important;
   }
 
@@ -538,13 +539,11 @@ p {
 }
 
 
-/* find propertie section */
 .image-section {
   display: flex;
   flex-direction: column;
   width: 95%;
   gap: 20px;
-  /* Space between rows */
 }
 
 .row {
@@ -552,23 +551,19 @@ p {
   padding: 20px;
   width: 100%;
   gap: 20px;
-  /* Space between columns */
   height: 400px;
-  /* Set a fixed height for the row (you can adjust this) */
 }
 
 .col-left {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  /* Space between small images */
   width: 50%;
 }
 
 .col-right {
   background-image: url('./images/newyork.jpg');
   background-size: cover;
-  /* Ensures the image covers the container */
   background-position: center;
   width: 50%;
   height: 100%;
@@ -578,16 +573,20 @@ p {
 .small-img-1 {
   background-image: url('./images/newyork.jpg');
   background-size: cover;
-  /* Ensures the image covers the container */
   background-position: center;
   width: 50%;
   height: 100%;
 }
 
+.img-tittle {
+  color: #fff;
+  padding-left: 30px;
+  opacity: 5;
+}
+
 .small-img-2 {
   background-image: url('./images/chicago.jpg');
   background-size: cover;
-  /* Ensures the image covers the container */
   background-position: center;
   width: 50%;
   height: 100%;
@@ -597,7 +596,6 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Ensures the large image covers its container */
 }
 
 .large-img-center {
@@ -606,11 +604,9 @@ p {
   object-fit: cover;
 }
 
-/* Second Row */
 .col-small {
   background-image: url('./images/sanDiego.jpg');
   background-size: cover;
-  /* Ensures the image covers the container */
   background-position: center;
   width: 25%;
   height: 100%;
@@ -620,7 +616,6 @@ p {
 .col-small-2 {
   background-image: url('./images/florida.jpg');
   background-size: cover;
-  /* Ensures the image covers the container */
   background-position: center;
   width: 25%;
   height: 100%;
@@ -630,7 +625,6 @@ p {
 .col-large {
   background-image: url('./images/Miami.jpg');
   background-size: cover;
-  /* Ensures the image covers the container */
   background-position: center;
   height: 100%;
   width: 50%;
@@ -672,21 +666,21 @@ p {
     width: 100%;
   }
 
-  /* .col-left, .col-right, .col-small, .col-large {
-    width: 100%;
-  } */
+ 
 }
 
 /* .testimonial */
-.testimonial-div{
+.testimonial-div {
   display: flex;
   flex-direction: row;
   width: 100%;
   column-gap: 80px;
   border-bottom: .5px solid rgb(50, 42, 42);
- 
+
 }
-.section-1, .section-2{
+
+.section-1,
+.section-2 {
   width: 50%;
   padding: 20px;
 }
@@ -695,17 +689,20 @@ p {
   display: flex;
   gap: 20px;
 }
+
 .stars {
-  color: yellow; 
-  font-size: 20px; 
-  margin-top: 5px; 
+  color: yellow;
+  font-size: 20px;
+  margin-top: 5px;
 }
 
 .column {
-  flex: 1; /* Each column takes equal space */
+  flex: 1;
+  /* Each column takes equal space */
 }
 
-h1, h3 {
+h1,
+h3 {
   margin-bottom: 10px;
 }
 
@@ -713,7 +710,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* Section 2 */
 .profile-row {
   display: flex;
   align-items: center;
@@ -741,14 +737,14 @@ p {
   margin-bottom: 20px;
 }
 
-/* Buttons */
 .buttons-row {
   display: flex;
   gap: 20px;
 }
 
-.btn-prev, .btn-next {
-  padding: 15px  30px;
+.btn-prev,
+.btn-next {
+  padding: 15px 30px;
   color: black;
   border: 1px solid blue;
   background-color: #fff;
@@ -756,27 +752,31 @@ p {
   border-radius: 20px;
 }
 
-.btn-prev:hover, .btn-next:hover {
+.btn-prev:hover,
+.btn-next:hover {
   background-color: #0056b3;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
-  .testimonial-div{
+  .testimonial-div {
     flex-direction: column;
   }
 
-  .section-1, .section-2{
+  .section-1,
+  .section-2 {
     width: 100%;
     padding: 20px;
   }
+
   .profile-row {
     flex-direction: column;
     text-align: center;
   }
+
   .buttons-row {
     display: flex;
-justify-content: center;  }
+    justify-content: center;
+  }
 
   .profile-pic {
     margin: 0 auto 10px;
@@ -850,7 +850,7 @@ justify-content: center;  }
 
 .footer-policies {
   margin-top: 20px;
-  color: #555; /* Slightly darker color for the policy links */
+  color: #555;
 }
 
 .footer-policies a {
@@ -870,7 +870,6 @@ justify-content: center;  }
   color: rgb(47, 36, 36);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .footer-links {
     flex-direction: column;
@@ -892,7 +891,7 @@ justify-content: center;  }
     gap: 5px;
   }
 
-  .footer-policies a{
+  .footer-policies a {
     border: none;
   }
 }
