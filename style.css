@@ -5,13 +5,13 @@ body {
   overflow-y: scroll;
   box-sizing: border-box;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   padding: 20px;
+  position: relative;
 }
 
 .company-name {
@@ -22,7 +22,9 @@ body {
 
 .nav-links {
   display: flex;
+  justify-content: center;
   gap: 20px;
+  flex-grow: 1; /* Ensures the nav-links take up available space */
 }
 
 .nav-links a {
@@ -50,25 +52,63 @@ body {
   background-color: #c73232;
 }
 
+/* Hamburger Menu CSS */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+/* Dropdown Menu CSS */
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.dropdown-menu a:hover {
+  color: #e84343;
+}
+
+/* Responsive design */
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    /* align-items: flex-start; */
-  }
-
   .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
     align-items: center;
+    
   }
 
-  .nav-links a {
-    text-align: left;
-    padding: 5px 0;
+  .dropdown-menu.show {
+    display: flex;
+    justify-content: center;
   }
 
-
+  .contact-btn {
+    margin-top: 10px;
+    order: 2; /* Keeps the Contact Us button at the end */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -76,15 +116,17 @@ body {
     font-size: 18px;
   }
 
-  .nav-links a {
+  .dropdown-menu a {
     font-size: 14px;
   }
 
   .contact-btn {
     padding: 8px 16px;
     font-size: 14px;
+    display: none;
   }
 }
+
 
 
 .container_div {

@@ -1,4 +1,16 @@
-// Sample card data with features as objects for two icons
+function toggleMenu() {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  dropdownMenu.classList.toggle('show');
+}
+
+document.querySelectorAll('.dropdown-menu a').forEach(item => {
+  item.addEventListener('click', () => {
+      document.querySelector('.dropdown-menu').classList.remove('show');
+  });
+});
+
+
+
 const cardData = [
   {
     image: './images/newyork.jpg',
@@ -62,13 +74,11 @@ const cardData = [
   }
 ];
 
-// Dynamically create and append the cards
 const container = document.getElementById('cards-container');
 cardData.forEach(card => {
   const cardElement = document.createElement('div');
   cardElement.classList.add('card');
 
-  // Construct the HTML for each card
   cardElement.innerHTML = `
       <div class="image-container">
         <img src="${card.image}" alt="${card.title}">
@@ -93,3 +103,4 @@ cardData.forEach(card => {
 
   container.appendChild(cardElement);
 });
+
