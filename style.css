@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-grow: 1; /* Ensures the nav-links take up available space */
+  flex-grow: 1;
 }
 
 .nav-links a {
@@ -52,7 +52,6 @@ body {
   background-color: #c73232;
 }
 
-/* Hamburger Menu CSS */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -67,7 +66,6 @@ body {
   margin: 3px 0;
 }
 
-/* Dropdown Menu CSS */
 .dropdown-menu {
   display: none;
   flex-direction: column;
@@ -88,7 +86,6 @@ body {
   color: #e84343;
 }
 
-/* Responsive design */
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none;
@@ -107,7 +104,7 @@ body {
 
   .contact-btn {
     margin-top: 10px;
-    order: 2; /* Keeps the Contact Us button at the end */
+    order: 2; 
   }
 }
 
@@ -126,8 +123,6 @@ body {
     display: none;
   }
 }
-
-
 
 .container_div {
   display: flex;
@@ -244,7 +239,6 @@ p {
   background-image: url('./images/office.jpg');
 }
 
-/* Responsive Design for smaller screens */
 @media screen and (max-width: 1024px) {
   .container_div {
     flex-direction: column;
@@ -325,9 +319,6 @@ p {
     width: 100%;
   }
 }
-
-
-
 
 
 /* card section  */
@@ -782,7 +773,6 @@ p {
 
 .column {
   flex: 1;
-  /* Each column takes equal space */
 }
 
 h1,
