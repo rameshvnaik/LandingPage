@@ -127,7 +127,7 @@ body {
 .container_div {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 25px;
   column-gap: 40px;
 }
 
@@ -137,6 +137,9 @@ body {
 
 .left-column {
   flex: 1;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
@@ -150,7 +153,7 @@ p {
 }
 
 .buttons {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .btn {
@@ -168,7 +171,7 @@ p {
 }
 
 .secondary-btn {
-  background-color: rgb(188, 126, 246);
+  background-color: rgb(40 87 238);
   color: white;
   border-radius: 5px;
 }
@@ -187,7 +190,7 @@ p {
 .card-display {
   flex: 1;
   background-color: #f1f0f0;
-  padding: 2px 20px;
+  padding: 15px 20px 5px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -207,13 +210,21 @@ p {
   height: auto;
   justify-content: space-between;
 }
+.image-fulls-block {
+  width: 50%;
+  height: 100%;
+}
+.commercial-real-estate-img {
+width: 100%;
+height: 100%;
+}
 
 .image-full {
   background-image: url('./images/commercial-real-estate.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 300px;
+  height: 60vh;
 }
 
 .photos {
@@ -330,17 +341,79 @@ p {
 }
 
 .nameing-card {
+  height: 150px; 
   flex: 1 1 calc(10.66% - 10px);
-  background-color: #fff;
+  background-color: #f1f0f0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  position: relative; 
+  overflow: hidden; 
 }
 
-.nameing-card h3 {
-  margin: 0;
-  font-size: 18px;
+
+
+.amazon{
+  background-image: url('./images/amazon.png');
+  background-size: 50%; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+}
+.amd{
+  background-image: url('./images/amd.jpg');
+  background-size: 50%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cisco-image{
+  background-image: url('./images/cisco.jpg');
+  background-size: 50%; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cisco-image{
+  background-image: url('./images/cisco.jpg');
+  background-size: 50%;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.dropcom-image{
+  background-image: url('./images/dropcam.jpg');
+  background-size: 70%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+}
+.logitech-image{
+  background-image: url('./images/logitech.png');
+  background-size: 70%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.spotify-image{
+  background-image: url('./images/Spotify.png');
+  background-size: 100%; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -385,7 +458,7 @@ p {
   gap: 10px;
   justify-content: space-between;
   max-width: 100%;
-  padding: 10px;
+  padding: 25px;
 }
 
 .card {
@@ -393,13 +466,13 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  flex-basis: calc(30.333% - 20px);
+  flex-basis: calc(33.333% - 20px);
   margin-bottom: 20px;
 }
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 40vh;
   object-fit: cover;
 }
 
@@ -413,7 +486,7 @@ p {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  background-color: rgb(95, 95, 246);
+  background-color: rgb(40 87 238);
   color: white;
   padding: 5px 10px;
   font-size: 0.9rem;
@@ -434,7 +507,10 @@ p {
 }
 
 .card-title .price {
-  color: #4CAF50;
+  color: #ea7c38;
+}
+.icons {
+  color: rgb(40 87 238);
 }
 
 .card-details {
@@ -493,18 +569,20 @@ p {
 .main-container {
   display: flex;
   gap: 20px;
-  max-width: 1200px;
-  min-height: 600px;
-  margin: 50px auto;
+  padding: 25px;
+  background-color: #b1aeae33;
+  /* max-width: 1200px; */
+  /* min-height: 600px; */
+  /* margin: 50px auto; */
 }
 
 .first-section {
   flex: 1;
   width: 50%;
-  background-color: white;
-  padding: 20px;
+  /* background-color: white; */
+  /* padding: 20px; */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .first-section h2 {
@@ -516,7 +594,7 @@ p {
 .display-card {
   background-color: #f9f9f9;
   border-radius: 8px;
-  padding: 5px;
+  padding: 10px 15px;
   margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -527,7 +605,7 @@ p {
 
 .card-icon {
   font-size: 2rem;
-  color: #4CAF50;
+  color: rgb(40 87 238);
 }
 
 .card h3 {
@@ -551,25 +629,36 @@ p {
   display: flex;
   flex-direction: column;
   width: 50%;
+  height: 100%;
 }
 
 
 .full-image-section {
   width: 100%;
 }
-
+.display-card-info {
+  display: flex;
+  flex-direction: column;
+  /* height:  80px; */
+    justify-content: flex-end;
+}
 .header-blue {
   color: blue;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
+  font-weight: 600;
+  margin: 0 !important;
+}
+.teams-block{
+  height: 50%;
+  width: 100%;
 }
 
 .teams-image {
   background-image: url('./images/team.jpg');
-  background-size: cover;
   background-position: center;
   width: 100%;
-  height: 50%;
+  height: 100%;
 
 }
 
@@ -613,17 +702,19 @@ p {
   }
 }
 
+.image-main-wrapper {
+  padding: 25px;
+}
 
 .image-section {
   display: flex;
   flex-direction: column;
-  width: 95%;
   gap: 20px;
+  width: 100%;
 }
 
 .row {
   display: flex;
-  padding: 20px;
   width: 100%;
   gap: 20px;
   height: 400px;
@@ -748,21 +839,28 @@ p {
 .testimonial-div {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  /* width: 100%; */
   column-gap: 80px;
   border-bottom: .5px solid rgb(50, 42, 42);
+  background-color: #b1aeae33;
+  padding: 25px;
 
 }
 
 .section-1,
 .section-2 {
   width: 50%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
+@media (max-width: 425px) {
+  .section-1, .section-2 {
+    width: 100%;
+  }
+}
 .two-columns {
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .stars {
@@ -771,9 +869,9 @@ p {
   margin-top: 5px;
 }
 
-.column {
+/* .column {
   flex: 1;
-}
+} */
 
 h1,
 h3 {
@@ -839,7 +937,7 @@ p {
   .section-1,
   .section-2 {
     width: 100%;
-    padding: 20px;
+  
   }
 
   .profile-row {

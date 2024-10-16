@@ -90,10 +90,11 @@ cardData.forEach(card => {
           <span class="price">${card.price}</span>
         </div>
         <p class="card-details">${card.details}</p>
+        <hr />
         <div class="card-features-ab">
           ${card.features.map(feature => `
             <div class="feature">
-              <i class="${feature.icon}"></i>
+              <i class="${feature.icon} icons"></i>
               <span>${feature.text}</span>
             </div>
           `).join('')}
