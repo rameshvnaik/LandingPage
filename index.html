@@ -1,269 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="navbar">
-        <div class="company-name">Biccas</div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Properties</a>
-            <a href="#">Services</a>
-        </div>
-        <button class="contact-btn">Contact Us</button>
-        <div class="hamburger" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </nav>
-    
-    <div class="dropdown-menu">
+      <div class="company-name">Biccas</div>
+      <div class="nav-links">
         <a href="#">Home</a>
         <a href="#">About Us</a>
         <a href="#">Properties</a>
         <a href="#">Services</a>
+      </div>
+      <button class="contact-btn">Contact Us</button>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div class="dropdown-menu">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Properties</a>
+      <a href="#">Services</a>
     </div>
-    
+
     <div class="container_div">
-        <div class="column left-column">
-            <h1 class="tag-line">Explore Your Perfect <br> Property with Biccas</h1>
-            <p>Begin Your Journey to Finding the Ideal Business Property From as low as $10 per day with limited time
-                offer discounts.</p>
+      <div class="column left-column">
+        <h1 class="tag-line">
+          Explore Your Perfect <br />
+          Property with Biccas
+        </h1>
+        <p>
+          Begin Your Journey to Finding the Ideal Business Property From as low
+          as $10 per day with limited time offer discounts.
+        </p>
 
-            <div class="buttons">
-                <button class="btn primary-btn">Learn More</button>
-                <button class="btn secondary-btn">Browse Properties</button>
-            </div>
-
-            <div class="cards">
-                <div class="card-display">
-                    <h3>200+</h3>
-                    <p class="title">Happy Customers</p>
-                </div>
-                <div class="card-display">
-                    <h3>10k+</h3>
-                    <p class="title"> For Clients</p>
-                </div>
-                <div class="card-display">
-                    <h3>16+</h3>
-                    <p class="title">Years of Experience</p>
-                </div>
-            </div>
+        <div class="buttons">
+          <button class="btn primary-btn">Learn More</button>
+          <button class="btn secondary-btn">Browse Properties</button>
         </div>
 
-        <div class="column right-column">
-            <div class="image-fulls-block">
-                <img src="./images/commercial-real-estate.jpg" class="commercial-real-estate-img" />
-            </div>
-            <div class="photos">
-                <div class="first-image">
-                </div>
-                <div class="second-image"></div>
-            </div>
+        <div class="cards">
+          <div class="card-display">
+            <h3>200+</h3>
+            <p class="title">Happy Customers</p>
+          </div>
+          <div class="card-display">
+            <h3>10k+</h3>
+            <p class="title">For Clients</p>
+          </div>
+          <div class="card-display">
+            <h3>16+</h3>
+            <p class="title">Years of Experience</p>
+          </div>
         </div>
+      </div>
+
+      <div class="column right-column">
+        <div class="image-fulls-block">
+          <img
+            src="./images/commercial-real-estate.jpg"
+            class="commercial-real-estate-img"
+          />
+        </div>
+        <div class="photos">
+          <div class="first-image"></div>
+          <div class="second-image"></div>
+        </div>
+      </div>
     </div>
 
     <!-- card section -->
-    <div class="containers">
-        <div class="nameing-card amazon">
-            
-        </div>
-        <div class="nameing-card amd">
+    <div class="logo-container">
+      <img
+        src="./images/amazon.png"
+        alt="Amazon Logo"
+      />
+      <img
+        src="./images/amd.png"
+        alt="AMD Logo"
+      />
+      <img
+        src="./images/cisco.png"
+        alt="Cisco Logo"
+      />
+      <img
+        src="./images/dropcam.jpg"
+        alt="Dropcam Logo"
+      />
+      <img
+      src="./images/logitech.png"
 
-        </div>
-        <div class="nameing-card cisco-image">
-
-        </div>
-        <div class="nameing-card dropcom-image">
-        </div>
-        <div class="nameing-card logitech-image">
-        </div>
-        <div class="nameing-card spotify-image">
-        </div>
+        alt="Logitech Logo"
+      />
+      <img
+        src="./images/Spotify.png"
+        alt="Spotify Logo"
+      />
     </div>
 
     <div class="header-section">
-        <p class="header-blue">CHECKOUT OUR NEW</p>
-        <h2 class="tag-line">Recently Added Listings</h2>
+      <p class="header-blue">CHECKOUT OUR NEW</p>
+      <h2 class="tag-line">Recently Added Listings</h2>
     </div>
 
     <div class="display-container">
-        <div class="cards-container" id="cards-container"></div>
-
+      <div class="cards-container" id="cards-container"></div>
     </div>
 
     <!-- image section -->
     <div class="main-container">
-        <div class="first-section">
-            <p class="header-blue">WHO ARE WE</p>
-            <h2 class="heading tag-line" >Helping you effortlessly find <br> the right property that suilts <br> your needs</h2>
+      <div class="first-section">
+        <p class="header-blue">WHO ARE WE</p>
+        <h1 class="heading tag-line">
+          Helping you effortlessly find <br />
+          the right property that suilts <br />
+          your needs
+        </h1>
 
-            <div class="display-card">
-                <i class="fas fa-home card-icon"></i>
-                <div class="display-card-info">
-                    <p class="header-blue">Guidance</p>
-                    <p>Committed to helping you easily find the right property,tailored just for you.</p>
-                </div>
-            </div>
-
-            <div class="display-card">
-                <i class="fas fa-building card-icon"></i>
-                <div>
-                    <p class="header-blue">Personal Care</p>
-                    <p>Helping you confidently find the right property for your lifestyle and budget.</p>
-
-                </div>
-            </div>
+        <div class="display-card">
+          <i class="fas fa-home card-icon"></i>
+          <div class="display-card-info">
+            <p class="header-blue">Guidance</p>
+            <p>
+              Committed to helping you easily find the right property,tailored
+              just for you.
+            </p>
+          </div>
         </div>
 
-        <div class="second-section">
-            <div class="image-section">
-                <div class="advetise-image"></div>
-                <div  class="teams-block"> 
-                    <div class="teams-image"></div>
-                </div>
-            </div>
-
-            <div class="full-image-section">
-                <div class="advetise-image2"></div>
-            </div>
+        <div class="display-card">
+          <i class="fas fa-building card-icon"></i>
+          <div>
+            <p class="header-blue">Personal Care</p>
+            <p>
+              Helping you confidently find the right property for your lifestyle
+              and budget.
+            </p>
+          </div>
         </div>
+      </div>
+
+      <div class="second-section">
+        <div class="image-section">
+          <div class="advetise-image"></div>
+          <div class="teams-block">
+            <div class="teams-image"></div>
+          </div>
+        </div>
+
+        <div class="full-image-section">
+          <div class="advetise-image2"></div>
+        </div>
+      </div>
     </div>
 
-
     <!-- find property section -->
-     <div class="image-main-wrapper">
-        <div class="image-section">
-            <div class="row">
-                <div class="col-left">
-                    <div class="small-img-1">
-                       <p class="img-tittle">2 Properties</p>
-                       <h3 class="img-tittle">Chicago</h3>
-                    </div>
-                    <div class="small-img-2">
-                        <p class="img-tittle">1 Properties</p>
-                        <h3 class="img-tittle">Los Angeles</h3>
-    
-                    </div>
-    
-                </div>
-                <div class="col-right">
-                    <p class="img-tittle">8 Properties</p>
-                    <h3 class="img-tittle">New York</h3>
-                </div>
+    <div class="image-main-wrapper">
+      <p class="header-blue">AREAS ACROSS THE TOWN</p>
+      <h2 class="tag-line">Find Properties in These Cities</h2>
+
+      <div class="image-section">
+        <div class="row">
+          <div class="col-left">
+            <div class="small-img-1">
+              <p class="img-tittle">2 Properties</p>
+              <h3 class="img-tittle">Chicago</h3>
             </div>
-    
-            <div class="row">
-                <div class="col-small">
-                    <p class="img-tittle">10 Properties</p>
-                    <h3 class="img-tittle">San Diego</h3>
-                </div>
-                <div class="col-large">
-                    <p class="img-tittle">2 Properties</p>
-                    <h3 class="img-tittle">Miami</h3>
-                </div>
-                <div class="col-small-2">
-                    <p class="img-tittle">3 Properties</p>
-                    <h3 class="img-tittle">Florida</h3>
-                </div>
+            <div class="small-img-2">
+              <p class="img-tittle">1 Properties</p>
+              <h3 class="img-tittle">Los Angeles</h3>
             </div>
+          </div>
+          <div class="col-right">
+            <p class="img-tittle">8 Properties</p>
+            <h3 class="img-tittle">New York</h3>
+          </div>
         </div>
-     </div>
-    
+
+        <div class="row">
+          <div class="col-small">
+            <p class="img-tittle">10 Properties</p>
+            <h3 class="img-tittle">San Diego</h3>
+          </div>
+          <div class="col-large">
+            <p class="img-tittle">2 Properties</p>
+            <h3 class="img-tittle">Miami</h3>
+          </div>
+          <div class="col-small-2">
+            <p class="img-tittle">3 Properties</p>
+            <h3 class="img-tittle">Florida</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Testimonial  -->
 
     <div class="testimonial-div">
-        <div class="section-1">
-            <p class="header-blue">TESTIMONIALS</p>
-            <h1 class="tag-line">What our customers are saying us?</h1>
-            <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour
-                and the like.</p>
+      <div class="section-1">
+        <p class="header-blue">TESTIMONIALS</p>
+        <h1 class="tag-line">What our customers are saying us?</h1>
+        <p>
+          Various versions have evolved over the years, sometimes by accident,
+          sometimes on purpose injected humour and the like.
+        </p>
 
-            <div class="two-columns">
-                <div class="column">
-                    <h3>10m+</h3>
-                    <p>Happy People</p>
-                </div>
-                <div class="column">
-                    <h3>4.88</h3>
-                    <p>Overall rating</p>
-                    <div class="stars">
-                        ★★★★★
-                    </div>
-                </div>
-            </div>
+        <div class="two-columns">
+          <div class="column">
+            <h3>10m+</h3>
+            <p>Happy People</p>
+          </div>
+          <div class="column">
+            <h3>4.88</h3>
+            <p>Overall rating</p>
+            <div class="stars">★★★★★</div>
+          </div>
         </div>
+      </div>
 
-        <div class="section-2">
-            <div class="profile-row">
-                <img src="./images/user_icon.jpg" alt="User Profile" class="profile-pic">
-                <div class="user-info">
-                    <h3>Cameron Williamson</h3>
-                    <p>Designer</p>
+      <div class="section-2">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-item">
+                <div class="carousel-header-section">
+                    <div class="item">
+                        <img src="./images/user_icon.jpg" alt="User Image" />
+                      </div>
+                      <div class="item-person-info">
+                        <h3>Cameron Williamson</h3>
+                        <p>Designer</p>
+                      </div>
                 </div>
-
-
+              
+              <p class="testimonial">
+                Our experience with Biccas was nothing short of exceptional.
+                From start to finish, their team demonstrated professionalism
+                and deep industry knowledge.
+              </p>
             </div>
-
-            <p>Our experience with Biccas war nothing short of exceptional <br> Fromstart to finish, their team
-                demonstrated professionalism, deep industry knowledge.</p>
-            <div class="buttons-row">
-                <button class="btn-prev"> <i class="fas fa-angle-left"></i>
-                </button>
-                <button class="btn-next"> <i class="fas fa-angle-right"></i>
-                </button>
+            <div class="carousel-item">
+                <div class="carousel-header-section">
+                    <div class="item">
+                        <img src="./images/user_icon.jpg" alt="User Image" />
+                      </div>
+                      <div class="item-person-info">
+                        <h3>Alex Johnson</h3>
+                        <p>Developer</p>
+                      </div>
+                </div>
+              
+              <p class="testimonial">
+                Biccas delivered exactly what we needed on time.  expertise
+                in the industry truly shows in the work they deliver.
+              </p>
             </div>
+            <div class="carousel-item">
+                <div class="carousel-header-section">
+                    <div class="item">
+                        <img src="./images/user_icon.jpg" alt="User Image" />
+                      </div>
+                      <div class="item-person-info">
+                        <h3>Sarah Connor</h3>
+                        <p>Manager</p>
+                      </div>
+                </div>
+              
+              <p class="testimonial">
+                Exceptional service and communication from start to finish. I
+                highly recommend their services to anyone looking for
+                professionalism and quality.
+              </p>
+            </div>
+          </div>
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
         </div>
-
-
+      </div>
     </div>
 
     <!-- footer section -->
     <footer class="footer">
-        <div class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Properties</a>
-            <a href="#">Service</a>
-            <a href="#">Contact</a>
-            <a href="#">Help</a>
-            <a href="#">Support</a>
-        </div>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Properties</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+        <a href="#">Support</a>
+      </div>
 
-        <div class="social-icons">
-            <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+      <div class="social-icons">
+        <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
 
-        <div class="footer-feedback">
-            <h4>Send your feedback: <a href="mailto:mail@gmail.com">biccas@gmail.com</a></h4>
-        </div>
+      <div class="footer-feedback">
+        <h4>
+          Send your feedback:
+          <a href="mailto:mail@gmail.com">biccas@gmail.com</a>
+        </h4>
+      </div>
 
-        <div class="footer-policies">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Cookie Notice</a>
-            <a href="#">Copyright Policy</a>
-            <a href="#">Data Policy</a>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2024 Design All rights are reserved</p>
-        </div>
+      <div class="footer-policies">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Notice</a>
+        <a href="#">Copyright Policy</a>
+        <a href="#">Data Policy</a>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 Design All rights are reserved</p>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

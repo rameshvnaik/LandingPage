@@ -10,6 +10,25 @@ document.querySelectorAll('.dropdown-menu a').forEach(item => {
 });
 
 
+const carousel = document.querySelector('.carousel');
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+let currentIndex = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
 
 const cardData = [
   {
