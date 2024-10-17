@@ -5,6 +5,7 @@ body {
   overflow-y: scroll;
   box-sizing: border-box;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,7 +16,8 @@ body {
 }
 
 .company-name {
-  color: #333;
+  color: #2D2D2D;
+
   font-size: 20px;
   font-weight: bold;
 }
@@ -27,11 +29,24 @@ body {
   flex-grow: 1;
 }
 
+.active {
+  border-bottom: 2px solid #006DD6;
+  color: #006DD6 !important;
+  font-family: 'Urbanist', sans-serif;
+
+}
+
 .nav-links a {
-  color: #333;
+  color: #333333;
+  font-weight: 500;
   text-decoration: none;
   font-size: 16px;
+  font-family: 'Urbanist', sans-serif;
+
 }
+
+
+
 
 .nav-links a:hover {
   color: #e84343;
@@ -42,10 +57,12 @@ body {
   color: black;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid red;
+  border-radius: 8px;
+  border: 1px solid #505050;
   cursor: pointer;
-  font-size: 16px;
+  font-weight: 500;
+  font-family: Urbanist;
+  font-size: 14px;
 }
 
 .contact-btn:hover {
@@ -94,7 +111,7 @@ body {
   .hamburger {
     display: flex;
     align-items: center;
-    
+
   }
 
   .dropdown-menu.show {
@@ -104,7 +121,7 @@ body {
 
   .contact-btn {
     margin-top: 10px;
-    order: 2; 
+    order: 2;
   }
 }
 
@@ -124,6 +141,7 @@ body {
   }
 }
 
+
 .container_div {
   display: flex;
   flex-wrap: wrap;
@@ -138,8 +156,10 @@ body {
 .left-column {
   flex: 1;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+
 }
 
 h1 {
@@ -156,6 +176,11 @@ p {
   margin-bottom: 60px;
 }
 
+.description {
+  color: #191A15;
+  line-height: 30px;
+}
+
 .btn {
   padding: 10px 20px;
   margin-right: 10px;
@@ -164,15 +189,20 @@ p {
 }
 
 .primary-btn {
-  color: black;
+  color: #808285;
+  font-size: 14px;
+  font-family: Urbanist;
   border: 1px solid gray;
   background-color: #fff;
   border-radius: 5px;
 }
 
 .secondary-btn {
-  background-color: rgb(40 87 238);
-  color: white;
+  background-color: #006DD6;
+
+  color: #E4E4E7;
+  font-size: 14px;
+  font-family: Urbanist;
   border-radius: 5px;
 }
 
@@ -206,17 +236,20 @@ p {
 .right-column {
   width: 50%;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   height: auto;
   justify-content: space-between;
 }
+
 .image-fulls-block {
+  padding-left: 20px;
   width: 50%;
   height: 100%;
 }
+
 .commercial-real-estate-img {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .image-full {
@@ -230,7 +263,8 @@ height: 100%;
 .photos {
   display: flex;
   width: 50%;
-  row-gap: 5px;
+  row-gap: 15px;
+  padding-bottom: 20px;
   flex-direction: column;
 }
 
@@ -293,14 +327,15 @@ height: 100%;
 
   .tag-line {
     font-size: 18px;
-    
+
   }
 
   .primary-btn {
     margin-bottom: 10px;
   }
 
-  .first-image, .second-image {
+  .first-image,
+  .second-image {
     height: auto;
   }
 }
@@ -340,12 +375,14 @@ height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #f1f0f0;
+  /* background-color: #f1f0f0; */
+  background-color: #F9F9F9;
+
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .logo-container img {
@@ -356,12 +393,13 @@ height: 100%;
 
 @media (max-width: 768px) {
   .logo-container {
-      flex-direction: column;
-      padding: 10px;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 15px;
   }
 
   .logo-container img {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 }
 
@@ -387,6 +425,7 @@ height: 100%;
 
 .header-section {
   padding: 20px;
+  line-height: 47px;
 }
 
 
@@ -407,7 +446,7 @@ height: 100%;
   gap: 10px;
   justify-content: space-between;
   max-width: 100%;
-  padding:  0  25px;
+  padding: 0 25px;
 }
 
 .card {
@@ -454,16 +493,30 @@ height: 100%;
   margin-bottom: 10px;
 }
 
-.card-title .price {
-  color: #ea7c38;
+.card-name {
+  font-size: 24px;
+  font-family: Urbanist;
+  font-weight: 700;
+
 }
+
+.card-title .price {
+  color: #EB664E;
+
+  font-size: 24px;
+  font-family: Urbanist;
+  font-weight: 700;
+
+}
+
 .icons {
   color: rgb(40 87 238);
 }
 
 .card-details {
-  font-size: 1rem;
-  color: #666;
+  font-size: 16px;
+  color: #808285;
+  
   margin-bottom: 15px;
 }
 
@@ -508,6 +561,25 @@ height: 100%;
     gap: 10px;
   }
 
+  .card-name {
+    font-size: 18px;
+
+  }
+
+  .card-details {
+    font-size: 12px !important;
+    
+  }
+  .feature {
+    font-size: 14px;
+  }
+
+  .card-title .price {
+
+    font-size: 16px;
+
+  }
+
   .cards-container {
     justify-content: center;
   }
@@ -521,14 +593,15 @@ height: 100%;
   gap: 50px;
   padding: 25px;
   margin-bottom: 7vw;
-  /* background-color: #b1aeae33; */
-  /* max-width: 1200px; */
-  /* min-height: 600px; */
-  /* margin: 50px auto; */
+  margin-top: 6vw;
+
 }
 
-.tag-line{
-  margin-bottom: 2vw;
+.tag-line {
+  margin-bottom: 2.5vw;
+  font-family: Urbanist;
+  font-weight: 600;
+
 }
 
 .first-section {
@@ -544,7 +617,6 @@ height: 100%;
 
 
 .display-card {
-  /* background-color: #f9f9f9; */
   border-radius: 8px;
   padding: 10px 15px;
   margin-bottom: 20px;
@@ -555,6 +627,13 @@ height: 100%;
   align-items: center;
   column-gap: 30px;
 
+}
+
+.heading-details {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .card-icon {
@@ -584,7 +663,6 @@ height: 100%;
   flex-direction: column;
   width: 50%;
   height: 100%;
-  /* gap: 40px; */
 }
 
 
@@ -593,20 +671,23 @@ height: 100%;
   width: 100%;
   margin-bottom: -20px;
 }
+
 .display-card-info {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 
 }
+
 .header-blue {
   color: #4361EE;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
-  font-weight: 550;
+  font-weight: 600;
   margin: 0 !important;
 }
-.teams-block{
+
+.teams-block {
   margin-top: 20px;
   height: 50%;
   width: 100%;
@@ -617,6 +698,15 @@ height: 100%;
   background-position: center;
   width: 100%;
   height: 100%;
+
+}
+
+.heading {
+  color: #191A15;
+  font-family: Urbanist;
+
+  font-size: 46px;
+  font-weight: 600;
 
 }
 
@@ -641,8 +731,22 @@ height: 100%;
     flex-direction: column;
   }
 
+  .heading-details {
+    font-size: 22px;
+    line-height: 30px;
+
+  }
+
   .first-section {
     width: 100%;
+  }
+
+  .header-blue {
+    color: #4361EE;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0 !important;
   }
 
   .second-section {
@@ -652,13 +756,15 @@ height: 100%;
   }
 
   .heading {
-    font-size: 18px !important;
+    font-size: 22px !important;
   }
 
   .image-section img {
     width: 100%;
   }
 }
+
+/* find property section */
 
 .image-main-wrapper {
   padding: 25px;
@@ -676,6 +782,14 @@ height: 100%;
   width: 100%;
   gap: 20px;
   height: 400px;
+}
+
+
+.heading-recent {
+  font-family: Poppins;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 .col-left {
@@ -768,6 +882,12 @@ height: 100%;
 
   }
 
+
+  .heading-recent {
+
+    font-size: 22px;
+  }
+
   .small-img-1,
   .small-img-2 {
     width: 100%;
@@ -790,17 +910,17 @@ height: 100%;
     width: 100%;
   }
 
- 
+
 }
 
 /* .testimonial */
 .testimonial-div {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
-  /* width: 100%; */
   column-gap: 80px;
-  border-bottom: .5px solid rgb(50, 42, 42);
-  background-color: #b1aeae33;
+  border-bottom: 1px solid #E8E8E8;
+  background-color: #F9F9F9;
   padding: 25px;
 
 }
@@ -835,9 +955,10 @@ height: 100%;
   text-align: center;
   height: 200px;
 }
+
 @media (max-width: 425px) {
-  .carousel-item  {
- padding: 0;
+  .carousel-item {
+    padding: 0;
   }
 }
 
@@ -855,9 +976,14 @@ height: 100%;
   margin-bottom: 10px;
 }
 
+
 h3 {
   font-size: 1.2em;
   margin-bottom: 5px;
+}
+
+.tetstimonal-header {
+  line-height: 45px;
 }
 
 p {
@@ -865,9 +991,19 @@ p {
   text-align: left;
 }
 
+.testimonial-details {
+  font-style: Urbanist;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+}
+
 .testimonial {
   margin-top: 10px;
-  font-style: italic;
+  font-style: Urbanist;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 button {
@@ -896,10 +1032,24 @@ button:hover {
 }
 
 @media (max-width: 425px) {
-  .section-1, .section-2 {
+
+  .section-1,
+  .section-2 {
     width: 100%;
   }
+
+  .carousels-button {
+    margin-top: 10vh;
+  }
+
+  .testimonial {
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
 }
+
 .two-columns {
   display: flex;
   gap: 50px;
@@ -911,9 +1061,6 @@ button:hover {
   margin-top: 5px;
 }
 
-/* .column {
-  flex: 1;
-} */
 
 h1,
 h3 {
@@ -933,7 +1080,7 @@ p {
   .section-1,
   .section-2 {
     width: 100%;
-  
+
   }
 }
 
@@ -955,7 +1102,10 @@ p {
 
 .footer-links a {
   text-decoration: none;
-  color: rgb(47, 36, 36);
+  color: #333333;
+  font-family: Urbanist;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .footer-links a:hover {
@@ -974,8 +1124,8 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #007bff;
-  color: white;
+  background-color: #4361EE;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1009,9 +1159,12 @@ p {
 
 .footer-policies a {
   text-decoration: none;
+  color: #646060;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
   margin-right: 10px;
   padding-right: 10px;
-  color: rgb(47, 36, 36);
   border-right: 1px solid rgb(47, 36, 36);
 }
 
@@ -1023,6 +1176,7 @@ p {
   margin-top: 20px;
   color: rgb(47, 36, 36);
 }
+
 .footer-copyright p {
   text-align: center;
 }
@@ -1035,6 +1189,10 @@ p {
 
   .social-icons {
     gap: 10px;
+  }
+  .item-person-info{
+    font-size: 18px;
+
   }
 
   .icon {
@@ -1051,4 +1209,14 @@ p {
   .footer-policies a {
     border: none;
   }
+
+  .footer-feedback {
+    font-size: 14px;
+  }
+  
+}
+
+
+.active {
+  text-decoration: #0056b3;
 }
